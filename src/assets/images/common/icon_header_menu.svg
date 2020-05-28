@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+    <defs>
+        <style>
+            .cls-1{fill:none}.cls-2{fill:#041a3f}
+        </style>
+    </defs>
+    <g id="Menu" transform="translate(-35 -37)">
+        <path id="사각형_175" d="M0 0h16v16H0z" class="cls-1" data-name="사각형 175" transform="translate(35 37)"/>
+        <path id="합치기_4" d="M0 14v-2h8v2zm0-6V6h16v2zm0-6V0h16v2z" class="cls-2" data-name="합치기 4" transform="translate(35 38)"/>
+    </g>
+</svg>

@@ -1,0 +1,22 @@
+@charset 'utf-8';
+
+*{ margin:0;padding:0;box-sizing: border-box;}
+html{font-size: 16px;color:#333}
+body{width: 100%;line-height: 1;}
+img{ max-width: 100%;vertical-align: top;border:none; }
+a{ text-decoration: none;color:#333}
+li{list-style: none;}
+h1,h2,h3,h4,h5{font-size: inherit;font-weight: normal};
+button{ background: none;outline: none;border: none;cursor: pointer; }
+table{border-collapse: collapse;}
+::-webkit-input-placeholder { /* Edge */
+    color: $gray;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: $gray;
+}
+
+::placeholder {
+    color: $gray;
+}

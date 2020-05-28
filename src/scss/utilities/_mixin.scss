@@ -1,0 +1,30 @@
+
+@mixin slideCirclButton( $bgColor, $size, $margin, $active, $activeColor ){
+    display: block;
+    background-color: $bgColor;
+    width: $size;
+    height: $size;
+    border-radius: $size;
+    margin: $margin;
+    opacity: 0.5;
+    position: relative;
+    &:after{
+        transition: transform 0.4s linear;
+        content: "";
+        display: block;
+        width: $size;
+        height: $size;
+        border:1px solid transparent;
+        border-radius: $size*2;
+        transform: translate( -1px, -1px );
+    }
+
+    &.#{$active}{
+        opacity: 1;
+        background-color: $activeColor;
+        &:after{
+            border-color: $activeColor;            
+            transform: translate( -1px, -1px ) scale(1.625);
+        }
+    }
+}

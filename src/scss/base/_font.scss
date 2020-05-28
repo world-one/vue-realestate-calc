@@ -1,0 +1,21 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700&display=swap&subset=korean');
+
+@font-face {
+    font-family: 'NanumSquare';
+    font-weight: 400;
+    src: url(~@/assets/font/NanumSquareR.woff) format('woff'),
+         url(~@/assets/font/NanumSquareR.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'NanumSquare';
+    font-weight: 700;
+    src: url(~@/assets/font/NanumSquareB.woff) format('woff'),
+         url(~@/assets/font/NanumSquareB.ttf) format('truetype');
+}
+
+body{
+    font-family: 'NanumSquare', sans-serif;
+}
+

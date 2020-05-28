@@ -1,0 +1,127 @@
+@charset 'utf-8';
+
+.header{
+    background-color: #fff;
+    z-index: 11;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding:18px 0;
+    border-bottom: 1px solid $gray;
+    
+}
+.header__logo{
+    text-align: center;
+}
+.header__menu__btn{
+    position: absolute;
+    left: 16px;
+    top: 16px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    line-height: 240px;
+    overflow: hidden;    
+    background: {
+        repeat:no-repeat;
+        size:contain;
+        position: center center;
+        image : url($imagesPath+'common/icon_header_menu.svg')
+    }
+    cursor: pointer;
+}
+.wrap__header__menu{
+    display: none;
+}
+.wrap__sidebar{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left:0;
+    top:0;
+    background-color: rgba( 0,0,0,0.3 );
+    visibility: hidden;
+    &.active{
+        visibility: visible;
+        .sidebar{
+            transform: translate(0, 0);
+        }        
+    }
+}
+.sidebar{
+    transform: translate(-100%, 0);
+    height: 100%;
+    width: 270px;
+    background-color: #fff;
+
+}
+.sidebar__title{
+    font-weight: 700;
+    font-size: 18px;
+}
+.sidebar__box{
+    border-top: 10px solid #f4f4f4;
+    padding: 30px 16px;
+    &:first-of-type{
+        border-top: none;
+    }
+}
+
+.siderbar__menu__anchor{
+    display: block;
+    margin-top: 30px;
+    &:first-of-type{
+        margin-top: 0;
+    }
+}
+
+@media screen and ( min-width : 768px ) {
+    .header{
+        height: 60px;
+        line-height: 60px;
+        padding:0;
+        .wrap{
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+        }
+    }
+    .header__logo{
+        font-weight: 700;
+        font-size: 21px;
+        margin-right: 25px;
+    }
+    .wrap__sidebar,
+    .header__menu__btn{
+        display: none;
+    }
+    .wrap__header__menu{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+    }
+
+    .header__menu__anchor{
+        margin-left: 16px;
+        color:#999;
+        &:first-of-type{
+            color: #333;
+        }
+    }        
+
+    .header__menu__button{
+        display: flex;
+        .btn{
+            margin-top: 12px;
+            height: 36px;
+            width: 70px;
+            line-height: 34px;
+            font-size: 14px;
+            margin-left: 10px;
+        }
+    }
+}
